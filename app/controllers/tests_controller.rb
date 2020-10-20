@@ -11,4 +11,9 @@ class TestsController < Simpler::Controller
 
   end
 
+  def show
+    @params = params
+    render plain: params
+  end
+
 end
