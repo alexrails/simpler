@@ -65,5 +65,10 @@ module Simpler
     def inline(text)
       @response.write(ERB.new(text).result(binding))
     end
+
+    def status(status)
+      @response.status = status
+    end
+
   end
 end
