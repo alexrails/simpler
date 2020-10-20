@@ -70,5 +70,9 @@ module Simpler
       @response.status = status
     end
 
+    def headers
+      @response
+    end
+
   end
 end
